@@ -1,0 +1,17 @@
+{
+  "name": "layout-desing-test-task-for-stvorka-company",
+  "version": "1.0.0",
+  "description": "Layout design of the figma template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hexletart",
+  "license": "ISC",
+  "dependencies": {
+    "stylelint": "^16.6.1",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-scss": "^6.3.2",
+    "surge": "^0.23.1"
+  }
+}
