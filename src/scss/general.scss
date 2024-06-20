@@ -18,21 +18,18 @@ p {
 }
 
 body {
-  width: 100%;
   @include flex-column-center-center;
+  width: 100%;
+  height: 100vh;
 }
 
-body,
 p,
+body,
 h1,
 h2,
 h3,
 h4 {
   margin: 0;
-}
-
-body {
-  height: 100vh;
 }
 
 @include btn;
