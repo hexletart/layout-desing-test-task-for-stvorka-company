@@ -1,0 +1,3 @@
+@function get-progress-bar-value($percentage, $circle-length-value) {
+  @return calc($circle-length-value - ($circle-length * 2) / 100);
+}

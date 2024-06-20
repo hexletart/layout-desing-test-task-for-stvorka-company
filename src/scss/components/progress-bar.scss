@@ -1,0 +1,41 @@
+.bar-item {
+  position: relative;
+  width: 61px;
+  height: 61px;
+
+  svg {
+    width: 61px;
+    height: 61px;
+    transform: rotate(-90deg);
+  }
+  
+  svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #FFFFFF;
+    opacity: 50%;
+    stroke-linecap: round;
+    transform: translate(1px, 1px);
+  }
+  
+  svg circle:nth-child(1) {
+    stroke-width: 1;
+  }
+
+  svg circle:nth-child(2) {
+    stroke-dasharray: $circle-length;
+    stroke-dashoffset: get-progress-bar-value(2, $circle-length);
+    stroke-width: 2;
+    stroke: white;
+    opacity: 100%
+  }
+
+  &-status {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+  }
+}

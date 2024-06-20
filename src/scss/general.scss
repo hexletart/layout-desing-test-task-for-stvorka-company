@@ -1,0 +1,77 @@
+@font-face {
+  font-family: Inter;
+  src: url("../assets/fonts/Inter/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: Inter-SemiBold;
+  src: url("../assets/fonts/Inter/Inter-SemiBold.ttf");
+}
+
+
+@include html("Inter", sans-serif, 16px, 1.5, $white, $body);
+
+body,
+div,
+p {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  @include flex-column-center-center;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+@include btn;
+
+.card {
+  @include flex-row-flex-start-center;
+  @include card(743px, 500px, $blue);
+  
+  &-progress-bar {
+    @include flex-row-flex-end-center;
+    @include size(82px, 100%)
+  }
+
+  &-description {
+    @include flex-column-flex-start-flex-start;
+    height: inherit;
+    margin-right: auto;
+    padding: 12px 16px 15px;
+
+    &-label {
+      padding: 0 13px;
+      border-radius: 40px;
+      background-color: $dard-blue;
+      font-size: 12px;
+    }
+    
+    &-status {
+      margin: 4px 0;
+      font-size: 15px;
+      line-height: 1.3343;
+      font-family: Inter-SemiBold, sans-serif;
+    }
+
+    &-task {
+      font-size: 12px;
+    }
+  }
+
+  &-button {
+    padding-right: 18px;
+  }
+}

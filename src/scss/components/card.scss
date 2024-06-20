@@ -1,0 +1,7 @@
+@mixin card($max-width, $min-width, $bg-color) {
+  max-width: $max-width;
+  min-width: $min-width;
+  width: 100%;
+  background-color: $bg-color;
+  border-radius: 10px;
+}
